@@ -45,7 +45,7 @@ export const CartPage: FC = () => {
 
    }, [currentOrder])
 
-   return <div className="cart__wrapper">
+   return <div className="cart-wrapper">
       <div className="cart">
          {currentOrder.length ? currentOrder.map((book, index) => {
             return <OrderItem bookData={book} key={index
