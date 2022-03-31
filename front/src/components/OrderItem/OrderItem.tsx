@@ -9,6 +9,7 @@ interface Props {
 }
 
 export const OrderItem: FC<Props> = ({ bookData }) => {
+   const orderItemWrapper = useRef(null)
    const bookImage: any = useRef(null)
 
    const dispatch = useAppDispatch()
