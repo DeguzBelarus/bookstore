@@ -26,8 +26,8 @@ export const OrderItem: FC<Props> = ({ bookData }) => {
    }
 
    const usSelectOrderItem = () => {
-      bookImage.current.style.width = "30px"
-      bookImage.current.style.height = "45px"
+      bookImage.current.style.width = "28px"
+      bookImage.current.style.height = "40px"
       bookImage.current.style.zIndex = "0"
    }
 
