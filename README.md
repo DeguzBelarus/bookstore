@@ -1,1 +1,1 @@
-To run this app in development mode: yarn dev
+To run this app in development mode: yarn dev (from /api folder)
