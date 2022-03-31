@@ -1,6 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "./store";
-
 interface BookStoreState {
    order: any[],
    orderCost: string | null,

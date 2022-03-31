@@ -8,15 +8,13 @@ import { OrderItem } from "../../components/OrderItem/OrderItem";
 import "./CartPage.scss"
 
 export const CartPage: FC = () => {
-   const dispatch = useAppDispatch()
+   const acceptButton: any = useRef(null)
 
+   const dispatch = useAppDispatch()
    const currentOrder = useAppSelector(selectOrder)
    const navigate = useNavigate()
 
-   const acceptButton: any = useRef(null)
-
    const cost = currentOrder.reduce((sum, book) => Number(sum + book.price), [])
-   dispatch(orderCostSave(cost))
 
    const acceptingOrder = () => {
       if (!currentOrder.length) return
@@ -27,6 +25,10 @@ export const CartPage: FC = () => {
    const returnToShop = () => {
       navigate("/")
    }
+
+   useEffect(() => {
+      dispatch(orderCostSave(cost))
+   }, [])
 
    useEffect(() => {
       if (!currentOrder.length) {

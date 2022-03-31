@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from "react";
+import React, { FC } from "react";
 import { useAppSelector } from "../../app/hooks";
 import { selectOrder } from "../../app/bookStoreSlice";
 import { useNavigate } from "react-router-dom";

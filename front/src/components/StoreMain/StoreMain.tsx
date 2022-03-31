@@ -24,6 +24,6 @@ export const StoreMain: FC = () => {
    return <main>
       {booksInShop ? booksInShop.map((book, index) => {
          return <Book bookData={book} key={index} />
-      }) : ""}
+      }) : "Loading..."}
    </main>
 }

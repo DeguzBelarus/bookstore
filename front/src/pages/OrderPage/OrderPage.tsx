@@ -96,7 +96,7 @@ export const OrderPage: FC = () => {
       }
    }, [transferData])
 
-   return <div className="order__wrapper">
+   return <div className="order-wrapper">
       {!orderConfirmed ? <form id="userdata-form" onSubmit={formSubmit}>
          <h2 className="order-header">Order Details:</h2>
          <h3 className="order-cost-header">{`Amount: ${cost} PLN`}</h3>

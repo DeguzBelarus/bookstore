@@ -3,7 +3,6 @@ import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { orderSave, selectOrder } from "../../app/bookStoreSlice";
 
 import "./Book.scss"
-
 interface Props {
    bookData: any
 }
@@ -40,7 +39,7 @@ export const Book: FC<Props> = ({ bookData }) => {
       dispatch(orderSave(currentOrder))
    }
 
-   return <div className="book__container" onMouseOver={bookInfoShow
+   return <div className="book-container" onMouseOver={bookInfoShow
    } onMouseOut={bookInfoHide}>
       <img className="cover-image" src={bookData.cover_url} alt="book image" ref={book} />
 
@@ -48,7 +47,6 @@ export const Book: FC<Props> = ({ bookData }) => {
       <p className="author-paragraph" ref={authorSpan}>{bookData.author}</p>
       <span className="id-span" ref={idSpan}>{`Book №: ${bookData.id}`}</span>
       <span className="pages-span" ref={pagesSpan}>{`Pages: ${bookData.pages}`}</span>
-
       <span className="price-span">{`${bookData.price} PLN`}</span>
 
       <div className="add-button" onClick={addToCart}>Add TO CART</div>

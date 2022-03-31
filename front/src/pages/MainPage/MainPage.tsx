@@ -5,7 +5,7 @@ import { StoreMain } from "../../components/StoreMain/StoreMain";
 import "./MainPage.scss"
 
 export const MainPage: FC = () => {
-   return <div className="shop__wrapper">
+   return <div className="shop-wrapper">
       <Header />
       <StoreMain />
    </div>
