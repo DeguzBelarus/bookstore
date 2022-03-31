@@ -1,18 +1,17 @@
 .order__item__wrapper {
-  width: 655px;
-  height: 40px;
+  width: 100%;
+  height: 70px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  background-color: rgba($color: yellowgreen, $alpha: 0.1);
+  background-color: rgba($color: #aa00ff, $alpha: 0.1);
   cursor: default;
 
   .book-preview-image {
-    width: 24px;
-    height: 36px;
-    min-height: 36px;
+    width: 30px;
+    height: 45px;
     position: absolute;
     top: 0;
     left: 0;
@@ -22,17 +21,22 @@
   }
 
   .item-title {
-    margin-right: 5px;
-    font-weight: bolder;
+    width: 155px;
+    margin-left: -25px;
+    font-size: 14px;
+    text-overflow: ellipsis;
   }
 
   .item-cost {
-    font-weight: bolder;
+    font-size: 8px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: gray;
   }
 
   .remove-button {
     width: 58px;
-    height: 35px;
+    height: 100%;
     position: absolute;
     top: 0;
     right: 0;

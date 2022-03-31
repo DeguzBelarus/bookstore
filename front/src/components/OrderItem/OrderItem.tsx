@@ -27,8 +27,8 @@ export const OrderItem: FC<Props> = ({ bookData }) => {
    }
 
    const usSelectOrderItem = () => {
-      bookImage.current.style.width = "24px"
-      bookImage.current.style.height = "35px"
+      bookImage.current.style.width = "30px"
+      bookImage.current.style.height = "45px"
       bookImage.current.style.zIndex = "0"
    }
 
@@ -36,7 +36,7 @@ export const OrderItem: FC<Props> = ({ bookData }) => {
    } onMouseOut={usSelectOrderItem}>
       <img className="book-preview-image" src={bookData.cover_url} alt="book preview image" ref={bookImage} />
       <span className="item-title">{bookData.title}</span>
-      <span className="item-cost">{bookData.price}</span>
+      <span className="item-cost">{`${bookData.price} PLN`}</span>
       <div className="remove-button" onClick={removeItem}>remove</div>
    </div>
 }
