@@ -9,6 +9,17 @@
   box-sizing: border-box;
   background-color: rgba($color: yellowgreen, $alpha: 0.1);
 
+  .book-preview-image {
+    width: 24px;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition-property: width, height;
+    transition-duration: 0.7s;
+    z-index: 0;
+  }
+
   .item-title {
     margin-right: 5px;
     font-weight: bolder;
