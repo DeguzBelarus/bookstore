@@ -1,0 +1,125 @@
+.book__container {
+  width: 300px;
+  height: 450px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5px;
+  box-sizing: border-box;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 5%;
+  overflow: hidden;
+  transition-property: border-color;
+  transition-duration: 0.7s;
+
+  .cover-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  span {
+    font-weight: bolder;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    padding: 2px;
+  }
+
+  p {
+    width: 100%;
+    margin: 0;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    padding: 2px;
+  }
+
+  .title-paragraph {
+    margin-top: 150px;
+    background-color: rgba($color: white, $alpha: 0.8);
+    opacity: 0;
+    z-index: 1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    text-align: center;
+  }
+
+  .author-paragraph {
+    background-color: rgba($color: white, $alpha: 0.8);
+    opacity: 0;
+    z-index: 1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    text-align: center;
+  }
+
+  .id-span {
+    background-color: rgba($color: white, $alpha: 0.8);
+    opacity: 0;
+    z-index: 1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+  }
+
+  .pages-span {
+    background-color: rgba($color: white, $alpha: 0.8);
+    opacity: 0;
+    z-index: 1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+  }
+
+  .price-span {
+    position: absolute;
+    z-index: 1;
+    left: 8px;
+    bottom: 48px;
+    background-color: rgba($color: white, $alpha: 0.7);
+    box-sizing: border-box;
+    padding: 3px;
+  }
+
+  .add-button {
+    width: 110px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: double;
+    border-radius: 5px;
+    background: rgba($color: green, $alpha: 0.7);
+    color: white;
+    z-index: 2;
+    transition-property: background-color;
+    transition-duration: 0.7s;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
+
+@media (hover: hover) {
+  .book__container {
+    &:hover {
+      border-color: yellow;
+    }
+
+    .add-button {
+      &:hover {
+        cursor: pointer;
+        background-color: rgba($color: #827717, $alpha: 0.8);
+      }
+    }
+  }
+}
