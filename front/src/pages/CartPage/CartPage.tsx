@@ -50,8 +50,11 @@ export const CartPage: FC = () => {
             } />
          }) : "There are no products in the cart..."}
          <span className="cost-total-span">{`Total: ${cost != 0 ? cost : "0"} PLN`}</span>
-         <div className="back-button" onClick={returnToShop}>Back</div>
-         <div className="next-button" ref={acceptButton} onClick={acceptingOrder}>NEXT</div>
+
+         <div className="buttons-container">
+            <div className="back-button" onClick={returnToShop}>Back</div>
+            <div className="next-button" ref={acceptButton} onClick={acceptingOrder}>NEXT</div>
+         </div>
       </div>
    </div>
 }
