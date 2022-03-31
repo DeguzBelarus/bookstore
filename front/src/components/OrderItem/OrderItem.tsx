@@ -9,7 +9,6 @@ interface Props {
 }
 
 export const OrderItem: FC<Props> = ({ bookData }) => {
-   const orderItemWrapper = useRef(null)
    const bookImage: any = useRef(null)
 
    const dispatch = useAppDispatch()
@@ -21,7 +20,7 @@ export const OrderItem: FC<Props> = ({ bookData }) => {
       console.log(currentOrder);
    }
 
-   const selectOrderItem = () => {
+   const selectOrderItem = (event: any) => {
       bookImage.current.style.width = "130px"
       bookImage.current.style.height = "195px"
       bookImage.current.style.zIndex = "2"

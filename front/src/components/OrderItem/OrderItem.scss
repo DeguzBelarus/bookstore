@@ -1,13 +1,13 @@
 .order__item__wrapper {
-  width: 658px;
+  width: 655px;
   height: 35px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 5px;
-  box-sizing: border-box;
   background-color: rgba($color: yellowgreen, $alpha: 0.1);
+  cursor: default;
 
   .book-preview-image {
     width: 24px;
@@ -35,7 +35,6 @@
     position: absolute;
     top: 0;
     right: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +52,7 @@
   .remove-button {
     &:hover {
       cursor: pointer;
-      background-color: rgba($color: red, $alpha: 1);
+      background-color: rgba($color: brown, $alpha: 1);
     }
   }
 }

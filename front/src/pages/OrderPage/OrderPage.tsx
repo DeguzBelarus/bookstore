@@ -120,7 +120,11 @@ export const OrderPage: FC = () => {
 
          <p className="message-paragraph">{message !== "" ? message : ""}</p>
       </form>
-
-         : <p className="message-paragraph">{message !== "" ? message : ""}</p>}
+         :
+         <div>
+            <h2 className="message-paragraph-confirmed">{message !== "" ? message : ""}</h2>
+            <h5>You will be redirected to the main page.</h5>
+         </div>
+      }
    </div>
 }
